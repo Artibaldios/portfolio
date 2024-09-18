@@ -1,0 +1,18 @@
+.nav-box{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+svg:hover{
+    color:#fa3afa;
+}
+
+@media (max-width: 768px) {
+    .nav-box{
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .nav-icons{
+        padding-top: 15px;
+    }
+}
