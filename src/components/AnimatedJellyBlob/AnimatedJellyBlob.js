@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
-import { spline } from "https://cdn.skypack.dev/@georgedoescode/spline@1.0.1";
-import SimplexNoise from "https://cdn.skypack.dev/simplex-noise@2.4.0";
+import { spline } from "@georgedoescode/spline";
+import SimplexNoise from 'simplex-noise';
 import "./AnimatedJellyBlob.css"
 import { Image, Box } from "@chakra-ui/react";
 import photo from "../../images/photo.jpg";
