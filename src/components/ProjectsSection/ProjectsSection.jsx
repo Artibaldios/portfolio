@@ -23,10 +23,22 @@ const projects = [
     getImageSrc: () => require("../../images/TaS.png"),
   },
   {
-    title: "Event planner",
-    description:
-      "A mobile application for leisure seekers to discover unique events and activities in their city with a few taps",
-    getImageSrc: () => require("../../images/photo4.jpg"),
+    title: "Little Lemon restaraunt",
+    description: "React project as a restaraunt page with boking functonality",
+    link: "https://artibaldios.github.io/Little-Lemon-restaurant/",
+    getImageSrc: () => require("../../images/lemonRestaraunt.png"),
+  },
+  {
+    title: "TypeScript demo",
+    description: "Demo project with typescript",
+    link: "https://artibaldios.github.io/Little-Lemon-restaurant/",
+    getImageSrc: () => require("../../images/lemonRestaraunt.png"),
+  },
+  {
+    title: "In Process",
+    description: "...",
+    link: "",
+    getImageSrc: () => require("../../images/working.png"),
   },
 ];
 
