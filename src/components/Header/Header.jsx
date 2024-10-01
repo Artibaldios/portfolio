@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
   faLinkedin,
   faInstagram,
+  faTelegram
 } from "@fortawesome/free-brands-svg-icons";
 import { Box, HStack } from "@chakra-ui/react";
 import CustomLink from "../CustomLink/CustomLink";
@@ -12,8 +12,8 @@ import "./Header.css";
 
 const socials = [
   {
-    icon: faEnvelope,
-    url: "mailto:artibaldios@gmail.com",
+    icon: faTelegram,
+    url: "https://t.me/artibaldi",
   },
   {
     icon: faGithub,

@@ -1,0 +1,53 @@
+.creeping-line {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    height: 130px;
+    z-index: 2;
+}
+
+.creeping-images {
+    display: inline-flex;
+    margin: 0 15px;
+    animation: scroll-left 18s linear infinite;
+}
+
+.creeping-image {
+    width: 100px;
+    height: auto;
+}
+
+.creeping-line svg {
+    margin: 0 20px;
+}
+
+.creeping-images,
+.creeping-images-second {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation: ticker 30s infinite linear forwards;
+}
+
+.creeping-images-second {
+    animation: 30s ticker 15s infinite linear forwards;
+}
+
+
+@keyframes ticker {
+    0% {
+        transform: translate(100%, 0);
+    }
+
+    50% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-100%, 0);
+    }
+}

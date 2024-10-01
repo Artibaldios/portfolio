@@ -29,10 +29,10 @@ const projects = [
     getImageSrc: () => require("../../images/lemonRestaraunt.png"),
   },
   {
-    title: "TypeScript demo",
-    description: "Demo project with typescript",
-    link: "https://artibaldios.github.io/Little-Lemon-restaurant/",
-    getImageSrc: () => require("../../images/lemonRestaraunt.png"),
+    title: "Hotel Booking site",
+    description: "Demo project with typescript for booking hotels",
+    link: "https://artibaldios.github.io/hotelBooking/",
+    getImageSrc: () => require("../../images/hotelBooking.png"),
   },
   {
     title: "In Process",
