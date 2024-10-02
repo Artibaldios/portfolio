@@ -25,7 +25,7 @@ const socials = [
   },
   {
     icon: faInstagram,
-    url: "https://medium.com",
+    url: "https://www.instagram.com/artibalddi/",
   },
 ];
 

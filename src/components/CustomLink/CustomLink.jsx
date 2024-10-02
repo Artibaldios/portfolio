@@ -3,7 +3,8 @@ import React from "react";
 import "./CustomLink.css";
 
 const CustomLink = (props) => {
-    const handleClick = (anchor) => () => {
+  const handleClick = (anchor) => (e) => {
+    e.preventDefault();
     const id = `${anchor}-section`;
     const element = document.getElementById(id);
     if (element) {
