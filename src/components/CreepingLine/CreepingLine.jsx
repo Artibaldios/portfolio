@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faCss3Alt,
@@ -30,18 +30,21 @@ const images = [
 ]
 
 const CreepingImageLine = () => {
+    useEffect(() => {
+        const container = document.querySelector(`.marquee`);
+        const slide = document.querySelector(`.marquee-content`);
+        const cloneSlide = slide.cloneNode(true);
+        container.appendChild(cloneSlide);
+      }, []);
     return (
-        <div className="creeping-line">
-            <div className="creeping-images">
+        <div className="marquee">
+            <ul className="marquee-content">
                 {images.map((icon, index) => (
-                    <FontAwesomeIcon key={index} icon={icon.icon} style={{ color: "#ff30ff" }} className="creeping-image" />
+                    <li key={index} className="creeping-image">
+                        <FontAwesomeIcon key={index} icon={icon.icon} style={{ color: "#ff30ff" }}  />
+                    </li>
                 ))}
-            </div>
-            <div className="creeping-images-second">
-                {images.map((icon, index) => (
-                    <FontAwesomeIcon key={`dup-${index}`} icon={icon.icon} style={{ color: "#ff30ff" }} className="creeping-image" />
-                ))}
-            </div>
+            </ul>
         </div>
     );
 };
