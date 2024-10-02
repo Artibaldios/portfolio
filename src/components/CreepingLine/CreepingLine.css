@@ -57,3 +57,17 @@
     width: 100%;
     border: 2px solid #eee;
 }
+@media (max-width: 992px) {
+    :root {
+      --marquee-width: 100vw;
+      --marquee-height: 15vh;
+      --marquee-elements-displayed: 4;
+    }
+}
+@media (max-width: 556px) {
+    :root {
+      --marquee-width: 100vw;
+      --marquee-height: 10vh;
+      --marquee-elements-displayed: 3;
+    }
+}
