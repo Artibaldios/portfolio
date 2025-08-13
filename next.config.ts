@@ -7,8 +7,8 @@ const nextConfig : NextConfig = {
   images: {
     unoptimized: true, // Disable image optimization for GitHub Pages compatibility
   },
-  assetPrefix: isProd ? '/your-repository-name/' : '',
-  basePath: isProd ? '/your-repository-name' : '',
+  assetPrefix: isProd ? '/portfolio' : '',
+  basePath: isProd ? '/portfolio' : '',
   output: 'export', // Export as static HTML
 };
 
