@@ -1,7 +1,7 @@
 "use client";
 
 import { Icon } from "@iconify/react";
-import { motion } from "framer-motion";
+import { motion, Transition, Variants } from "framer-motion";
 import SectionHeader from "./SectionHeader";
 
 const experience = [
@@ -52,28 +52,15 @@ export default function ExperienceSection() {
 
   const itemVariants = {
     hidden: { opacity: 0, y: 60 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.8,
-        ease: [0.25, 0.46, 0.45, 0.94],
-      },
-    },
+    visible: { opacity: 1, y: 0 }
   };
 
   const iconVariants = {
     hidden: { scale: 0, rotate: -90 },
-    visible: {
-      scale: 1,
-      rotate: 0,
-      transition: {
-        type: "spring",
-        stiffness: 200,
-        damping: 15,
-        delay: 0.3,
-      },
-    },
+    visible: { 
+      scale: 1, 
+      rotate: 0 
+    }
   };
 
   return (
@@ -113,6 +100,7 @@ export default function ExperienceSection() {
             <motion.div
               key={index}
               variants={itemVariants}
+              transition={{ duration: 0.8, ease: "easeOut" }}
               className="relative group"
             >
               <div className="flex flex-col sm:flex-row sm:items-start gap-6 md:gap-8 lg:gap-12">
@@ -120,6 +108,11 @@ export default function ExperienceSection() {
                 <div className="flex-shrink-0 flex flex-col items-center sm:items-start">
                   <motion.div
                     variants={iconVariants}
+                    transition={{ 
+                      type: "spring", 
+                      stiffness: 200, 
+                      damping: 15 
+                    }}
                     whileHover={{ scale: 1.1, rotate: 5 }}
                     className={`w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 rounded-2xl md:rounded-3xl bg-gradient-to-br ${exp.companyColor} flex items-center justify-center shadow-xl md:shadow-2xl mb-3 md:mb-4 relative overflow-hidden group-hover:shadow-2xl md:group-hover:shadow-3xl transition-all duration-500`}
                   >

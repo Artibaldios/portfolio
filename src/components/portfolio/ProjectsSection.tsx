@@ -47,38 +47,19 @@ const projects = [
 export default function ProjectsSection() {
   const containerVariants = {
     hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.3,
-        delayChildren: 0.1,
-      },
-    },
+    visible: { opacity: 1 }
   };
 
   const itemVariants = {
     hidden: { opacity: 0, y: 60, scale: 0.95 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      scale: 1,
-      transition: {
-        duration: 0.8,
-        ease: [0.25, 0.46, 0.45, 0.94],
-      },
-    },
+    visible: { opacity: 1, y: 0, scale: 1 }
   };
 
   const floatVariants = {
-    animate: {
+    animate: { 
       y: [-10, 10, -10],
-      x: [-5, 5, -5],
-      transition: {
-        duration: 6,
-        repeat: Infinity,
-        ease: "easeInOut",
-      },
-    },
+      x: [-5, 5, -5]
+    }
   };
 
   return (
@@ -94,17 +75,32 @@ export default function ProjectsSection() {
       <div className="absolute inset-0 pointer-events-none">
         <motion.div
           variants={floatVariants}
+          transition={{ 
+            duration: 6, 
+            repeat: Infinity, 
+            ease: "easeInOut" 
+          }}
           animate="animate"
           className="absolute top-5 md:top-20 right-2 md:right-16 w-12 sm:w-16 md:w-32 h-12 sm:h-16 md:h-32 bg-gradient-to-br from-purple-400/15 md:from-purple-400/20 to-pink-400/15 md:to-pink-400/20 rounded-full blur-xl md:blur-4xl"
         />
         <motion.div
           variants={floatVariants}
+          transition={{ 
+            duration: 6, 
+            repeat: Infinity, 
+            ease: "easeInOut" 
+          }}
           animate="animate"
           style={{ animationDelay: "2s" }}
           className="absolute bottom-5 md:bottom-20 left-2 md:left-16 w-16 sm:w-20 md:w-40 h-16 sm:h-20 md:h-40 bg-gradient-to-br from-blue-400/10 md:from-blue-400/15 to-cyan-400/10 md:to-cyan-400/15 rounded-full blur-xl md:blur-2xl"
         />
         <motion.div
           variants={floatVariants}
+          transition={{ 
+            duration: 6, 
+            repeat: Infinity, 
+            ease: "easeInOut" 
+          }}
           animate="animate"
           style={{ animationDelay: "4s" }}
           className="hidden lg:block absolute top-1/3 right-1/3 w-20 h-20 bg-gradient-to-br from-green-400/20 to-emerald-400/20 rounded-full blur-xl"
@@ -114,6 +110,10 @@ export default function ProjectsSection() {
       <motion.div
         variants={containerVariants}
         initial="hidden"
+        transition={{ 
+          staggerChildren: 0.3, 
+          delayChildren: 0.1 
+        }}
         whileInView="visible"
         viewport={{ once: true }}
         className="relative z-10"
