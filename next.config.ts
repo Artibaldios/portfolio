@@ -1,13 +1,14 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export', // Static HTML export mode
-  basePath: '/portfolio', // Replace with your repo name (critical for GitHub Pages)
+  output: 'export',
+  basePath: '/portfolio',
+  assetPrefix: '/portfolio/',
   images: {
-    unoptimized: true, // Required for static export
+    unoptimized: true,
   },
-  // Optional: Set the output folder (default is 'out')
   distDir: 'out',
+  trailingSlash: true,
 };
 
 export default nextConfig;

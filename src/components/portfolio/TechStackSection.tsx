@@ -50,6 +50,25 @@ const techStackData: Record<string, TechItem[]> = {
       category: "Frontend",
       description: "Architectural style of Representational State Transfer",
     },
+    {
+      name: "Redux/ RTK",
+      icon: "skill-icons:redux",
+      category: "Frontend",
+      description: "State management",
+    },
+    {
+      name: "Tanstack",
+      icon: "simple-icons:tanstack",
+      category: "Frontend",
+      description: "State management",
+    },
+    {
+      name: "Zustand",
+      icon: "logos:zendesk-icon",
+      category: "Frontend",
+      description: "State management",
+    },
+
   ],
   "Backend": [
     {
@@ -63,12 +82,6 @@ const techStackData: Record<string, TechItem[]> = {
       icon: "skill-icons:expressjs-dark",
       category: "Backend",
       description: "Fast, minimalist web framework for Node.js",
-    },
-    {
-      name: "GraphQL",
-      icon: "logos:graphql",
-      category: "Backend",
-      description: "Query language for APIs",
     },
     {
       name: "Socket.io",

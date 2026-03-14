@@ -7,6 +7,18 @@ import SectionHeader from "./SectionHeader";
 
 const projects = [
   {
+    title: "quiz-master",
+    subtitle: "Quizz app for everyone",
+    description: "Test your knowledge. Discover hundreds of quizzes across all topics",
+    github: "https://github.com/Artibaldios/quiz",
+    live: "https://quiz-master.up.railway.app/en",
+    gradient: "from-blue-500 to-purple-200",
+    status: "Live",
+    category: "Web Application",
+    highlight: "Web Sockets",
+    clientType: "coop with friends"
+  },
+  {
     title: "blog-arti-dev",
     subtitle: "Blog for developers",
     description: "A tech blog about frontend development typically covers key topics such as web design, development, databases, marketing ...",

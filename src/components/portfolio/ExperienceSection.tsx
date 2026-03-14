@@ -27,12 +27,14 @@ const experience = [
     companyIcon: "ic:outline-work-outline",
     description: "Provided debugging and technical support for time management components, developed and implemented new features, updated legacy codebases with modern web standards.",
     achievements: [
-      "Contributing to products in various industries such as healthcare, logistics, finance, and education",
+      "Developed and maintained highly responsive and interactive UI using React and TypeScript",
+      "Contributed to products in various industries such as healthcare, logistics, finance, and education",
       "Fixed over 50+ bugs connected with development products",
-      "Improving user engagement, and increasing client retention by implementing responsive designs and optimizing frontend code",
+      "Ensuring code quality and UX through testing with Jest, Puppeteer, Cypress libraries",
+      "Improved user engagement, and increased client retention by implementing responsive designs and optimizing frontend code",
       "Participating in internal initiatives such as frontend developers meetups"
     ],
-    technologies: ["JavaScript", "React", "TypeScript", "REST API", "WEB", "Node.js", "GIT", "Figma", "Docker"]
+    technologies: ["JavaScript", "React", "TypeScript", "REST API", "WEB", "Node.js", "GIT", "Figma", "Docker", "Jest", "Cypress", "ESLint"]
   }
 ];
 

@@ -7,8 +7,8 @@
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint",
-		"predeploy": "npm run build",
-  	"deploy": "gh-pages -d out" 
+    "predeploy": "rm -rf out && npm run build",
+    "deploy": "gh-pages -d out -t true"
 	},
 	"dependencies": {
 		"@emailjs/browser": "^4.4.1",
