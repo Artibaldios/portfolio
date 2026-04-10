@@ -13,9 +13,10 @@ const experience = [
     companyColor: "from-green-500 to-green-600",
     description: "Provided frontline technical support and troubleshooting for clients using company-developed widgets, ensuring timely resolution of hardware and software issues",
     achievements: [
-      "Consistently praised for skillfulness, quick learning, and strong communication",
-      "Participated in remote sessions and communicated with customers via email",
-      "Acted as a liaison between technical teams and non-technical stakeholders",
+      "Provided technical support and implemented custom solutions for client-specific requirements.",
+      "Consistently praised for skillfulness, quick learning, and strong communication.",
+      "Participated in remote sessions and communicated with customers via email.",
+      "Acted as a liaison between technical teams and non-technical stakeholders.",
     ],
     technologies: ["JavaScript", "HTML", "CSS", "Node.js", "REST API", "WEB", "JIRA"]
   },
@@ -27,12 +28,15 @@ const experience = [
     companyIcon: "ic:outline-work-outline",
     description: "Provided debugging and technical support for time management components, developed and implemented new features, updated legacy codebases with modern web standards.",
     achievements: [
-      "Developed and maintained highly responsive and interactive UI using React and TypeScript",
-      "Contributed to products in various industries such as healthcare, logistics, finance, and education",
-      "Fixed over 50+ bugs connected with development products",
-      "Ensuring code quality and UX through testing with Jest, Puppeteer, Cypress libraries",
-      "Improved user engagement, and increased client retention by implementing responsive designs and optimizing frontend code",
-      "Participating in internal initiatives such as frontend developers meetups"
+      "Developed and maintained admin panels and dashboards for products in healthcare, logistics.",
+      "Implemented frontend integrations with REST APIs, ensuring stable data flow between client and server.",
+      "Developed and integrated multiple new UI components and features for SVAR and DHTMLX libraries.",
+      "Fixed over 70+ bugs connected with development products, implemented automated testing and participated in manual QA.",
+      "Refactored legacy frontend code to modern stack and patterns, improving maintainability and readability of the codebase.",
+      "DHTMLX Gantt - built project management dashboards with interactive Gantt charts and resource scheduling.",
+      "DHTMLX Scheduler - created calendar and event management systems with advanced scheduling capabilities.",
+      "Contributed to documentation and example projects to help external developers adopt the libraries.",
+      "Collaborated in an Agile environment using Git, Jira and CI/CD pipelines."
     ],
     technologies: ["JavaScript", "React", "TypeScript", "REST API", "WEB", "Node.js", "GIT", "Figma", "Docker", "Jest", "Cypress", "ESLint"]
   }

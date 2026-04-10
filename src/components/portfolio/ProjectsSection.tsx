@@ -6,6 +6,18 @@ import Link from "next/link";
 import SectionHeader from "./SectionHeader";
 
 const projects = [
+    {
+    title: "Oculus chat",
+    subtitle: "Copy of popular chat",
+    description: "Chat implemented with a free ai model via zenmux service",
+    github: "https://github.com/Artibaldios/oculus-chat-demo",
+    live: "https://oculus-chat-demo.up.railway.app/",
+    gradient: "from-red-500 to-purple-200",
+    status: "Live",
+    category: "Web Application",
+    highlight: "Supabase",
+    clientType: "AI chat"
+  },
   {
     title: "quiz-master",
     subtitle: "Quizz app for everyone",
@@ -23,7 +35,7 @@ const projects = [
     subtitle: "Blog for developers",
     description: "A tech blog about frontend development typically covers key topics such as web design, development, databases, marketing ...",
     github: "https://github.com/Artibaldios/devBlog-client",
-    live: "https://blog-arti-dev.onrender.com/",
+    live: "https://blog-arti-dev.up.railway.app/",
     gradient: "from-purple-500 to-purple-200",
     status: "Live",
     category: "Web Application",
@@ -65,11 +77,7 @@ export default function ProjectsSection() {
   return (
     <motion.section
       id="projects"
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 1.2 }}
-      viewport={{ once: true }}
-      className="mb-16 md:mb-24 lg:mb-32 relative overflow-hidden"
+      className="mb-16 md:mb-24 lg:mb-32 relative"
     >
       {/* Enhanced Background Elements */}
       <div className="absolute inset-0 pointer-events-none">
@@ -109,13 +117,10 @@ export default function ProjectsSection() {
 
       <motion.div
         variants={containerVariants}
-        initial="hidden"
         transition={{ 
           staggerChildren: 0.3, 
           delayChildren: 0.1 
         }}
-        whileInView="visible"
-        viewport={{ once: true }}
         className="relative z-10"
       >
         {/* Section Header */}
@@ -133,7 +138,6 @@ export default function ProjectsSection() {
             <motion.div
               key={index}
               variants={itemVariants}
-              whileHover={{ y: -2 }}
               transition={{ type: "spring", stiffness: 300 }}
               className="group"
             >

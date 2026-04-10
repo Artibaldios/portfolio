@@ -21,8 +21,8 @@ export default function Background() {
 
   // Reduce animation complexity on mobile
   const animationConfig = isMobile
-    ? { duration: 12, ease: "linear" }
-    : { duration: 8, ease: "easeInOut" };
+    ? { duration: 12, ease: "linear" as const }
+    : { duration: 8, ease: "easeInOut" as const };
 
   return (
     <div className="fixed inset-0 -z-10 overflow-hidden">
