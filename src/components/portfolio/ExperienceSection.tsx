@@ -6,7 +6,7 @@ import SectionHeader from "./SectionHeader";
 
 const experience = [
   {
-    role: "Tech Supprt Specialist",
+    role: "Tech Support Specialist",
     company: "XB Software",
     period: "October 2021 — October 2022",
     companyIcon: "streamline:customer-support-1-solid",
@@ -21,22 +21,21 @@ const experience = [
     technologies: ["JavaScript", "HTML", "CSS", "Node.js", "REST API", "WEB", "JIRA"]
   },
   {
-    role: "Front-end Developer",
+    role: "Full-stack Developer",
     company: "XB Software",
     period: "November 2023 — Present",
     companyColor: "from-blue-500 to-blue-600",
     companyIcon: "ic:outline-work-outline",
-    description: "Provided debugging and technical support for time management components, developed and implemented new features, updated legacy codebases with modern web standards.",
+    description: "Developed and maintained production web applications using JavaScript, TypeScript, React, Node.js, and modern full-stack architecture.",
     achievements: [
-      "Developed and maintained admin panels and dashboards for products in healthcare, logistics.",
-      "Implemented frontend integrations with REST APIs, ensuring stable data flow between client and server.",
-      "Developed and integrated multiple new UI components and features for SVAR and DHTMLX libraries.",
-      "Fixed over 70+ bugs connected with development products, implemented automated testing and participated in manual QA.",
-      "Refactored legacy frontend code to modern stack and patterns, improving maintainability and readability of the codebase.",
-      "DHTMLX Gantt - built project management dashboards with interactive Gantt charts and resource scheduling.",
-      "DHTMLX Scheduler - created calendar and event management systems with advanced scheduling capabilities.",
-      "Contributed to documentation and example projects to help external developers adopt the libraries.",
-      "Collaborated in an Agile environment using Git, Jira and CI/CD pipelines."
+      "Developed RESTful APIs using Node.js and TypeScript, including authentication, validation, and error handling. Designed PostgreSQL schemas and managed database migrations using Prisma ORM",
+      "Integrated OpenAI API with JavaScript/TypeScript applications using LLM function calling and structured tool execution.",
+      "Implemented reusable UI components and new features for DHTMLX and SVAR libraries.",
+      "Investigated and resolved 90+ software defects, focusing on root-cause analysis, debugging, and long-term code maintainability.",
+      "Refactored legacy JavaScript modules into TypeScript, improving type safety, maintainability, and code quality.",
+      "Developed a modular Scheduler application with responsive design and native integrations for React, Angular, and Vue",
+      "Implemented unit and end-to-end testing using Jest and Cypress to improve software reliability.",
+      "Participated in code reviews, CI/CD workflows, technical documentation, and continuous product improvements."
     ],
     technologies: ["JavaScript", "React", "TypeScript", "REST API", "WEB", "Node.js", "GIT", "Figma", "Docker", "Jest", "Cypress", "ESLint"]
   }

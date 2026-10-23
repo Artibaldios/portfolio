@@ -9,7 +9,7 @@ export default function TypewriterRole() {
   const [isDeleting, setIsDeleting] = useState(false);
 
   const roles = [
-    "Front-end Developer",
+    "Full-stack Developer",
     "Software Engineer",
     "AI Enthusiast"
   ];
@@ -159,4 +159,4 @@ export default function TypewriterRole() {
       </motion.div>
     </motion.div>
   );
-} 
+}

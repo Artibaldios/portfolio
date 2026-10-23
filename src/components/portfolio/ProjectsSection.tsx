@@ -6,7 +6,19 @@ import Link from "next/link";
 import SectionHeader from "./SectionHeader";
 
 const projects = [
-    {
+  {
+    title: "Gantt AI Maker",
+    subtitle: "an Intelligent Gantt Chart Maker with DHTMLX and AI",
+    description: "Textual AI layer on top of an existing Gantt chart without rewriting the entire full-stack application",
+    github: "https://github.com/DHTMLX/gantt-maker-ai-demo/",
+    live: "https://dhtmlx.com/docs/demo/ai-gantt-maker/",
+    gradient: "from-purple-500 to-orange-200",
+    status: "Live",
+    category: "Web Application",
+    highlight: "DHTMLX Gantt",
+    clientType: "AI"
+  },
+  {
     title: "Oculus chat",
     subtitle: "Copy of popular chat",
     description: "Chat implemented with a free ai model via zenmux service",
@@ -33,7 +45,7 @@ const projects = [
   {
     title: "blog-arti-dev",
     subtitle: "Blog for developers",
-    description: "A tech blog about frontend development typically covers key topics such as web design, development, databases, marketing ...",
+    description: "A tech blog about full-stack development typically covers key topics such as web design, development, databases, marketing ...",
     github: "https://github.com/Artibaldios/devBlog-client",
     live: "https://blog-arti-dev.up.railway.app/",
     gradient: "from-purple-500 to-purple-200",
@@ -43,7 +55,7 @@ const projects = [
     clientType: "Dev Blog"
   },
   {
-    title: "Find Killer",
+    title: "Find the Killer",
     subtitle: "A card game",
     description: "A fun and fast-paced game to test your attention. Can you find the killer before time runs out? Make sure to read the rules before playing.",
     github: "https://github.com/Artibaldios/cardsgame",
@@ -68,7 +80,7 @@ export default function ProjectsSection() {
   };
 
   const floatVariants = {
-    animate: { 
+    animate: {
       y: [-10, 10, -10],
       x: [-5, 5, -5]
     }
@@ -83,20 +95,20 @@ export default function ProjectsSection() {
       <div className="absolute inset-0 pointer-events-none">
         <motion.div
           variants={floatVariants}
-          transition={{ 
-            duration: 6, 
-            repeat: Infinity, 
-            ease: "easeInOut" 
+          transition={{
+            duration: 6,
+            repeat: Infinity,
+            ease: "easeInOut"
           }}
           animate="animate"
           className="absolute top-5 md:top-20 right-2 md:right-16 w-12 sm:w-16 md:w-32 h-12 sm:h-16 md:h-32 bg-gradient-to-br from-purple-400/15 md:from-purple-400/20 to-pink-400/15 md:to-pink-400/20 rounded-full blur-xl md:blur-4xl"
         />
         <motion.div
           variants={floatVariants}
-          transition={{ 
-            duration: 6, 
-            repeat: Infinity, 
-            ease: "easeInOut" 
+          transition={{
+            duration: 6,
+            repeat: Infinity,
+            ease: "easeInOut"
           }}
           animate="animate"
           style={{ animationDelay: "2s" }}
@@ -104,10 +116,10 @@ export default function ProjectsSection() {
         />
         <motion.div
           variants={floatVariants}
-          transition={{ 
-            duration: 6, 
-            repeat: Infinity, 
-            ease: "easeInOut" 
+          transition={{
+            duration: 6,
+            repeat: Infinity,
+            ease: "easeInOut"
           }}
           animate="animate"
           style={{ animationDelay: "4s" }}
@@ -117,9 +129,9 @@ export default function ProjectsSection() {
 
       <motion.div
         variants={containerVariants}
-        transition={{ 
-          staggerChildren: 0.3, 
-          delayChildren: 0.1 
+        transition={{
+          staggerChildren: 0.3,
+          delayChildren: 0.1
         }}
         className="relative z-10"
       >
@@ -127,7 +139,7 @@ export default function ProjectsSection() {
         <SectionHeader
           tagText="Portfolio Showcase"
           tagIcon="solar:code-square-bold"
-          heading="Pet Projects"
+          heading="Projects"
           showUnderline={true}
           centered={true}
         />
@@ -226,4 +238,4 @@ export default function ProjectsSection() {
       </motion.div>
     </motion.section>
   );
-} 
+}

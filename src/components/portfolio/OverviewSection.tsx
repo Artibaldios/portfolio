@@ -80,7 +80,7 @@ export default function OverviewSection() {
                       Hello, I&apos;m Artyom Borisevich
                     </h3>
                     <p className="text-base md:text-lg lg:text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-4 md:mb-6">
-                      A passionate <span className="font-bold text-blue-600 dark:text-blue-400">Front-end Developer</span> and
+                      A passionate <span className="font-bold text-blue-600 dark:text-blue-400">Full-stack Developer</span> and
                       <span className="font-bold text-purple-600 dark:text-purple-400">
                         &nbsp; AI enthusiast</span> with
                       <span className="font-bold text-green-600 dark:text-green-400"> 3+ years</span> of experience in software development
@@ -157,7 +157,7 @@ export default function OverviewSection() {
                       <Icon icon="ic:outline-work-outline" className="text-white w-5 md:w-6 h-5 md:h-6" width={24} height={24} />
                     </div>
                     <div>
-                      <h4 className="font-bold text-gray-900 dark:text-white text-base md:text-lg">Front-end Developer</h4>
+                      <h4 className="font-bold text-gray-900 dark:text-white text-base md:text-lg">Full-stack Developer</h4>
                       <p className="text-green-600 dark:text-green-400 font-medium text-sm md:text-base">XB Software</p>
                       <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400 mt-1">2023 — Present</p>
                     </div>
@@ -290,4 +290,4 @@ export default function OverviewSection() {
       </motion.div>
     </motion.section>
   );
-} 
+}
